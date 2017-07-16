@@ -27,7 +27,7 @@ For example, install lodash module
 ```
 npm install lodash --save
 ```
-"--save" into command will update your package.json file by adding package details into 'dependencies' section.
+"--save" into command will update your package. json file by adding package details into 'dependencies' section. So the next time if you want to install all package dependencies require for your application, you can run "npm install" which will install all dependencies mentioned into the package.json file.
 ```
 "dependencies": {
 	"lodash": "^4.17.4"
@@ -41,5 +41,6 @@ const _ = require('lodash');
 
 # How to run
 ```
+npm install
 node app.js
 ```
