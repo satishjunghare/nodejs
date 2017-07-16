@@ -1,11 +1,10 @@
-console.log("Starting app.");
+console.log('Starting app.js');
 
-// Lost file system module
-const fs = require('fs');
+// load os module and log user details
 const os = require('os');
-
 var user = os.userInfo();
-// console.log(user);
+console.log(user);
 
-// Append value to the file
-fs.appendFile('greetings.txt', 'Hello '+user.username+'!');
+// load our own module
+const notes = require('./notes.js');
+console.log('Result: '+ notes.add(5, 2));
